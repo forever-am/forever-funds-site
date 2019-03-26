@@ -1,1 +1,214 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://forever-funds.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://forever-funds.com/" rel="alternate" type="text/html" /><updated>2019-03-22T12:20:43-04:00</updated><id>https://forever-funds.com/feed.xml</id><title type="html">Forever Funds</title><subtitle>Markets change, risk management endures</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="https://forever-funds.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://forever-funds.com/" rel="alternate" type="text/html" /><updated>2019-03-26T16:44:40+01:00</updated><id>https://forever-funds.com/</id><title type="html">Forever Funds</title><subtitle>Markets change, risk management endures</subtitle><entry><title type="html">What Risk-Management for Crypto Investors?</title><link href="https://forever-funds.com/blog/what-risk-management-for-crypto-investors.html" rel="alternate" type="text/html" title="What Risk-Management for Crypto Investors?" /><published>2018-11-05T00:00:00+01:00</published><updated>2018-11-05T00:00:00+01:00</updated><id>https://forever-funds.com/blog/what-risk-management-for-crypto-investors</id><content type="html" xml:base="https://forever-funds.com/blog/what-risk-management-for-crypto-investors.html">&lt;p&gt;Investing is a bit like rock-climbing this way: a good risk-management 
+plan lets you take risks more confidently, and avoid panicking at the wrong 
+time. This is certainly true in the case of crypto.&lt;/p&gt;
+
+&lt;p&gt;In this post:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I discuss the unique risk/reward profile of crypto-currencies, 
+using Bitcoin as my example.&lt;/li&gt;
+  &lt;li&gt;I argue that 
+volatility control is a poor risk-management paradigm for crypto: VOLATILITY 
+ IS THE POINT.&lt;/li&gt;
+  &lt;li&gt;I illustrate how drawdown control lets investors achieve a more attractive 
+ trade-off between upside capture and downside protection than volatility 
+ control.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The analysis builds on my 2018 &lt;em&gt;Journal of Risk&lt;/em&gt; &lt;a href=&quot;https://www.risk
+.net/journal-of-risk/5416616/mostly-prior-free-asset-allocation&quot; target=&quot;_blank&quot;&gt;paper&lt;/a&gt; and my 
+&lt;a href=&quot;https://papers
+.ssrn.com/sol3/papers.cfm?abstract_id=3179215&quot; target=&quot;_blank&quot;&gt;white paper&lt;/a&gt; with Alice Wang.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-riskreward-profile-of-bitcoin&quot;&gt;The Risk/Reward Profile of Bitcoin&lt;/h4&gt;
+
+&lt;p&gt;Crypto-currencies have a remarkable risk/reward profile. Over 2011-2018 
+Bitcoin 
+delivered returns of 260% a year, for a volatility of 
+ 165% a year. That corresponds to a solid Sharpe ratio of 1.56.  In 
+ comparison, over the same period, the S&amp;amp;P 500 had a Sharpe ratio of 0.87. 
+ Hence, even controlling for the fact that 2011-2018 was   ‘‘risk-on’’ for most 
+ assets, 
+ Bitcoin delivered twice as much returns per unit of volatility than the S&amp;amp;P
+  500.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Finance Reminder — the &lt;a href=&quot;https://en.wikipedia.org/wiki/Sharpe_ratio&quot; target=&quot;_blank&quot;&gt;Sharpe ratio&lt;/a&gt;
+ is the ratio of returns (net of the risk-free rate)
+  to the volatility. It is independent of leverage. It lets us compare the 
+  attractiveness of returns controlling for implicit leverage.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The catch is that Bitcoin can experience very large &lt;a href=&quot;https://www
+.investopedia.com/terms/d/drawdown.asp&quot; target=&quot;_blank&quot;&gt;drawdowns&lt;/a&gt;, i.e. very large&lt;br /&gt;
+peak-to-trough losses. Indeed, since 2011 there have been 
+three times where Bitcoin lost at least 70% of its value.
+In each of the last two crashes, in 2011-2012  and 2013-2014,&lt;br /&gt;
+Bitcoin actually lost  more than 90% of its value.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://forever-funds.com/assets/images/blog/crashes.png&quot; alt=&quot;crashes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This makes it very hard for anyone to invest a significant share of their 
+portfolio in Bitcoin or other crypto-currencies.  While it may be feasible to 
+HODL for investors who got their crypto for cheap — say 
+ in the early days of mining — HODLing seems unbearably stressful
+  for an investor allocating savings accumulated over years of hard 
+work.  The obvious danger is that the 
+investor 
+will panic and sell low, only to reenter at the next high.&lt;/p&gt;
+
+&lt;p&gt;The goal of risk-management is to help the investor deal with such difficult
+ periods. It’s especially important because panicky investors often end up buying high and selling low. I will discuss two possible 
+ approaches:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.investopedia.com/terms/v/volatility.asp&quot; target=&quot;_blank&quot;&gt;Volatility&lt;/a&gt; 
+Control — the most common risk-management framework, and the engine at work 
+behind asset allocation strategies such as &lt;a href=&quot;https://www.investopedia.com/terms/r/risk-parity.asp&quot; target=&quot;_blank&quot;&gt;risk parity&lt;/a&gt; (including 
+Bridgewater’s All Weather fund)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.investopedia.com/terms/d/drawdown.asp&quot; target=&quot;_blank&quot;&gt;Drawdown&lt;/a&gt; Control
+— (which I’ve written about &lt;a href=&quot;https://www.risk
+.net/journal-of-risk/5416616/mostly-prior-free-asset-allocation&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;) directly 
+targets drawdowns rather than volatility.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;volatility-control&quot;&gt;Volatility Control&lt;/h4&gt;
+
+&lt;p&gt;Volatility control seeks to maintain constant the volatility of the portfolio 
+through the cycle. Formally, the share of the portfolio invested in risky 
+assets will be proportional to the inverse of a recent 
+estimate of volatility.&lt;/p&gt;
+
+&lt;p&gt;A noteable feature of volatility control is that expected returns over the 
+cycle play no role in sizing the exposition to risky assets. 
+Over the course of a boom-and-bust cycle, 
+the strategy will maintain a constant volatility exposure. This 
+ means that in order to keep drawdowns manageable, say
+50%, it is necessary to reduce the risk exposure even in good times, which 
+will considerably reduce aggregate returns. The simulation below illustrates 
+this. 
+In order to keep drawdowns below 50%, the volatility target must be set to 
+32%.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://forever-funds.com/assets/images/blog/vol_ctrl_vs_bitcoin.png&quot; alt=&quot;vol_ctrl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Volatility control has a big impact on performance. On the one hand, the 
+Sharpe ratio increases to 3.3 vs 1.56 for Bitcoin. On the other hand, 
+annual returns are divided by two: they are now 130% vs 260% for Bitcoin. 
+This difference compounds: over the last 5 years, this volatility control 
+strategy would 
+have resulted in a final wealth 32 times smaller than just holding Bitcoin!&lt;/p&gt;
+
+&lt;h4 id=&quot;why-volatility-alone-is-a-poor-measure-of-stress&quot;&gt;Why Volatility Alone is a Poor Measure of Stress&lt;/h4&gt;
+
+&lt;p&gt;Volatility alone does not correctly capture the level of stress that an 
+investor faces. I claim that volatility on the upside feels fine. It is 
+drawdowns that hurt. 
+As a result, volatility control gives up a large amount of 
+upside to attain an unobjective that does not really make investors feel 
+better.&lt;/p&gt;
+
+&lt;p&gt;Indeed, when the Sharpe ratio of an asset is high, volatility is a 
+benediction. One does not get rich from Sharpe, one gets rich from returns, 
+and &lt;strong&gt;net returns = Sharpe ratio x volatility&lt;/strong&gt;. That’s one
+  of the reasons why investing in 
+ real estate is often attractive: by letting investors  borrow 5 times their 
+ downpayment, it 
+ lets them increase the volatility of their portfolio.  Bitcoin’s volatility 
+ should be attractive to an investor for the same 
+ reasons leverage is attractive to a real estate investor. Volatility is the
+  point!&lt;/p&gt;
+
+&lt;p&gt;As an illustration I plot how $10,000 would grow over five years, if 
+ invested in two funds with the same historical Sharpe as Bitcoin (~1.56), but 
+ with
+  10%
+  vs 20% volatility. Investing in the higher volatility 
+   fund would certainly be a more stressful experience, but it achieves more 
+   than double the final wealth of the 10% volatility fund. It is 
+   interesting to look at the&lt;br /&gt;
+   sample volatility of each fund over time: while there are some 
+   fluctuations, it is largely very stable.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://forever-funds.com/assets/images/blog/vol_is_good.png&quot; alt=&quot;vol_is_good&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://forever-funds.com/assets/images/blog/vol_doesnt_capture_stress.png&quot; alt=&quot;vol_stress&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While the funds have roughly constant volatility, it’s pretty 
+clear that the stress level of an investor would vary over time: 2014-2015 would feel fantastic, whereas 
+2016-2017 would feel terrible. This highlights that volatility just 
+does not properly capture investor stress. Drawdowns, rather than 
+volatility measure how stressful holding an investment is.&lt;/p&gt;
+
+&lt;p&gt;The value of this insight is that once drawdowns become the target for 
+risk-management, it’s possible to vary volatility exposure over a 
+boom-and-bust cycle. As a result, one can potentially reduce drawdowns without 
+giving up on the upside.&lt;/p&gt;
+
+&lt;h4 id=&quot;drawdown-control&quot;&gt;Drawdown Control&lt;/h4&gt;
+
+&lt;p&gt;Drawdown control (see our &lt;a href=&quot;/methodology/&quot;&gt;methodology&lt;/a&gt; section) seeks to 
+minimize traditional drawdowns against the safe asset, as well as drawdowns 
+relative to a risky benchmark (here Bitcoin). By using methods from robust
+ control, we 
+have shown &lt;a href=&quot;https://www.risk
+.net/journal-of-risk/5416616/mostly-prior-free-asset-allocation&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://papers
+.ssrn.com/sol3/papers.cfm?abstract_id=3179215&quot; target=&quot;_blank&quot;&gt;there&lt;/a&gt; that it is possible to achieve attractive 
+trade-offs between upside capture and downside protection once the target is
+ drawdowns rather than volatility.&lt;/p&gt;
+
+&lt;p&gt;The results speak for themselves. I plot below the cumulated returns of a 
+drawdown control strategy where the maximum leverage is adjusted so that 
+maximum drawdowns against the safe asset are equal to 50%. Because the strategy cuts
+ losses effectively during downturns, the strategy tolerates leverage up 
+ to 150% while keeping drawdowns under 50%. The resulting Sharpe ratio is 5.05 and turns 
+ out to be better than under volatility control. More importantly, keeping 
+ drawdowns equal to 50%, returns are
+  much higher than under volatility control: 470% rather than 130%.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://forever-funds.com/assets/images/blog/dd_ctrl_vs_bitcoin.png&quot; alt=&quot;dd_ctrl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The immediate implication is that for investors whose aversion to risk is 
+better described by drawdowns rather than volatility, drawdown control is a 
+much 
+better risk-management strategy than volatility control. As the table below 
+summarizes, it sacrifices a lot
+ less performance in order to achieve the same risk-management objectives. 
+ This insight seems especially appropriate in the context of 
+crypto-currencies that exhibit large Sharpe ratios, large drawdowns, and large 
+returns.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;minmax drawdown&lt;/th&gt;
+      &lt;th&gt;volatility control&lt;/th&gt;
+      &lt;th&gt;bitcoin&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sharpe&lt;/td&gt;
+      &lt;td&gt;5.05&lt;/td&gt;
+      &lt;td&gt;3.30&lt;/td&gt;
+      &lt;td&gt;1.56&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;annualized returns&lt;/td&gt;
+      &lt;td&gt;470%&lt;/td&gt;
+      &lt;td&gt;130%&lt;/td&gt;
+      &lt;td&gt;260%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max drawdown&lt;/td&gt;
+      &lt;td&gt;50%&lt;/td&gt;
+      &lt;td&gt;50%&lt;/td&gt;
+      &lt;td&gt;93%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;volatility&lt;/td&gt;
+      &lt;td&gt;93%&lt;/td&gt;
+      &lt;td&gt;32%&lt;/td&gt;
+      &lt;td&gt;165%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>sylvain_chassang</name></author><summary type="html">Investing is a bit like rock-climbing this way: a good risk-management plan lets you take risks more confidently, and avoid panicking at the wrong time. This is certainly true in the case of crypto.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://forever-funds.com/assets/images/blog/rope.jpg" /></entry></feed>
