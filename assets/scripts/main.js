@@ -392,7 +392,8 @@ var CRCDataFn = (function (_w) {
                             month: 'short',
                             year: 'numeric',
                             day: 'numeric'
-                        })});
+                        })  + " | " + dataOption["currency"].toUpperCase();
+                    });
 
                     new CRCPerformance('performance-chart', {
                         name: dataOption.chart_name,
@@ -464,6 +465,26 @@ var CRCDataFn = (function (_w) {
 
 }(window));
 
+
+var update_overview = function (perf_urls, element_id) {
+    Promise.all(Object.values(perf_urls).map(function(url) { return fetch(url); })).then(
+        function(responses) {
+            Promise.all(responses.map(function (response) { return response.json(); })).then(
+                function(json_responses) {
+                    nav_value = "NAV: ";
+                    currencies = Object.keys(perf_urls);
+                    for (var i = 0; i < currencies.length; ++i) {
+                        json_response = Object.values(json_responses[i]);
+                        nav = json_response[json_response.length - 1].toFixed(2);
+                        nav_value += (i > 0 ? "|" : "") + currencies[i].toUpperCase() + " " + nav;
+                    }
+                    document.getElementById(element_id).innerText = nav_value;
+                    console.log(nav_value);
+                }
+            );
+        }
+    );
+};
 
 window.onload = function() {
     var hamburger = document.getElementsByClassName('menu-button')[0];

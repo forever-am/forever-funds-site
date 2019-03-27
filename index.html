@@ -49,6 +49,8 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
                             </li><li class="menu-item">
                                 <a class="page-link" href="/dynamic-edge/">Dynamic Edge</a>
                             </li><li class="menu-item">
+                                <a class="page-link" href="/research/">Research</a>
+                            </li><li class="menu-item">
                                 <a class="page-link" href="/about/">About us</a>
                             </li></ul>
             </div></nav>
@@ -73,14 +75,14 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         </div>
         <div class="methodology-content">
             <div class="entry-content">
-                <h3 id="forever-dynamic-core">Forever Dynamic Core</h3>
-
+                <h3 id="forever-dynamic-core"><a href="/dynamic-core/">Forever Dynamic Core</a></h3>
+<h6 id="overview-nav-core"></h6>
 <p>The investment objective of Forever Dynamic Core (the “Fund”) is to seek capital appreciation over the medium term and generate consistent returns with worst-case drawdowns under 15%.</p>
 
 <p>The Fund uses the <a href="/assets/pdf/minmax_brief.pdf" target="_blank">MinMax DrawDown Control</a> asset allocation approach to gain upside exposure to diversified returns premia (including equity, emerging markets, interest rates, carry, and reversal) while robustly controlling downside risks. The Fund does not use direct leverage and holds only diversified liquid indices openly traded on regulated exchanges.</p>
 
-<h3 id="forever-dynamic-edge">Forever Dynamic Edge</h3>
-
+<h3 id="forever-dynamic-edge"><a href="/dynamic-edge/">Forever Dynamic Edge</a></h3>
+<h6 id="overview-nav-edge"></h6>
 <p>The investment objective of Forever Dynamic Edge is to achieve high capital growth over the long term and generate consistent returns with worst-case drawdowns under 25%.</p>
 
 <p>The Fund uses the <a href="/assets/pdf/minmax_brief.pdf" target="_blank">MinMax DrawDown Control</a> asset allocation approach to gain upside exposure to high returns risk premia while robustly controlling downside risks. The portfolio does not use direct leverage and holds only diversified liquid indices openly traded on regulated exchanges. It offers weekly liquidity.</p>
@@ -110,6 +112,23 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         document.getElementById("disclaimer").hidden = true;
     };
 </script>
+
+
+<script>
+    ["usd", "eur", "chf"].forEach(function (currency) {
+
+    });
+    base_path = '/assets/data/';
+    update_overview({
+        "usd": base_path + "core_usd_perf.json",
+        "eur": base_path + "core_eur_perf.json",
+        "chf": base_path + "core_chf_perf.json",
+    }, "overview-nav-core");
+    update_overview({
+        "usd": base_path + "edge_usd_perf.json",
+    }, "overview-nav-edge");
+</script>
+
 
 </body>
     

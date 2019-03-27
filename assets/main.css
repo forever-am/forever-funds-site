@@ -1125,6 +1125,87 @@ table {
   #crc3-about .team-advisory {
     margin-top: 35px; }
 
+#crc3-research {
+  margin: 130px 0 35px; }
+  #crc3-research .title {
+    font-size: 27px; }
+    @media (min-width: 768px) {
+      #crc3-research .title {
+        font-size: 35px; } }
+    @media (min-width: 992px) {
+      #crc3-research .title {
+        font-size: 52px; } }
+  #crc3-research .description {
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center; }
+  #crc3-research .teams {
+    margin-top: 40px; }
+  #crc3-research .member {
+    padding: 25px 0; }
+    #crc3-research .member:not(:first-child) {
+      margin-top: 35px; }
+    #crc3-research .member-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      text-align: justify; }
+    #crc3-research .member-avatar {
+      position: relative;
+      width: 100%;
+      text-align: center; }
+      #crc3-research .member-avatar-wrapper {
+        position: relative;
+        display: inline-block;
+        width: auto; }
+        #crc3-research .member-avatar-wrapper span {
+          text-transform: uppercase; }
+      @media (min-width: 768px) {
+        #crc3-research .member-avatar {
+          flex: 0 0 40%;
+          max-width: 40%; } }
+      @media (min-width: 992px) {
+        #crc3-research .member-avatar {
+          flex: 0 0 25%;
+          max-width: 25%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; } }
+    #crc3-research .member-content {
+      padding-top: 10px;
+      margin-top: 15px;
+      text-align: center; }
+      @media (min-width: 768px) {
+        #crc3-research .member-content {
+          margin-top: 0;
+          text-align: left;
+          flex: 0 0 60%;
+          max-width: 60%; } }
+      @media (min-width: 992px) {
+        #crc3-research .member-content {
+          flex: 0 0 75%;
+          max-width: 75%;
+          padding-left: 0; } }
+    #crc3-research .member-name {
+      width: 100%;
+      font-weight: 600; }
+    #crc3-research .member-group {
+      font-size: 15px;
+      color: var(--color-primary); }
+    #crc3-research .member .entry-content {
+      margin-top: 25px;
+      font-size: 14px;
+      line-height: 1.4; }
+      @media (min-width: 992px) {
+        #crc3-research .member .entry-content {
+          margin-top: 45px; } }
+      #crc3-research .member .entry-content p:not(:last-of-type) {
+        margin-bottom: 20px; }
+  #crc3-research .team-advisory {
+    margin-top: 35px; }
+
 #crc3-methodology {
   --color-section: $white;
   padding: 105px 0 85px;
@@ -1151,6 +1232,8 @@ table {
     @media (min-width: 992px) {
       #crc3-methodology .methodology-content {
         margin: 50px 0 0; } }
+  #crc3-methodology h6 {
+    font-weight: 600; }
 
 .blog {
   margin: 90px 0 80px; }
