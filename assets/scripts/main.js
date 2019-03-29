@@ -471,6 +471,8 @@ var update_overview = function (perf_urls, element_id) {
         function(responses) {
             Promise.all(responses.map(function (response) { return response.json(); })).then(
                 function(json_responses) {
+                    dates = Object.keys(json_responses[0]);
+                    date = new Date(Number.parseInt(dates[dates.length - 1]));
                     nav_value = "NAV: ";
                     currencies = Object.keys(perf_urls);
                     for (var i = 0; i < currencies.length; ++i) {
@@ -478,8 +480,12 @@ var update_overview = function (perf_urls, element_id) {
                         nav = json_response[json_response.length - 1].toFixed(2);
                         nav_value += (i > 0 ? "|" : "") + currencies[i].toUpperCase() + " " + nav;
                     }
+                    nav_value += " as of " + date.toLocaleDateString('en-US', {
+                        month: 'short',
+                        year: 'numeric',
+                        day: 'numeric'
+                    });
                     document.getElementById(element_id).innerText = nav_value;
-                    console.log(nav_value);
                 }
             );
         }
