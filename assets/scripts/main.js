@@ -253,8 +253,8 @@ var CRCDataFn = (function (_w) {
             var tableAllocation = document.getElementById('crc3-allocation-data');
             var tableAllocationBody = tableAllocation.children[1];
             // Define names of table rows
-            var tableAllocationRowTitles = ['Equities', 'Government Bonds', 'Commodities & Extractors', 'Gold',
-                                            'Cash Equivalents'];
+            var tableAllocationRowTitles = ['Equities', 'Fixed Income', 'Commodities & Extractors', 'Precious Metals',
+                                            'Long Volatility', 'Short Volatility', 'Cash Equivalents'];
 
             fetch(dataOption.urlAllocation).then(function (response) {
                 response.json().then(function (json) {
@@ -276,21 +276,33 @@ var CRCDataFn = (function (_w) {
                     }
 
                     remove_children(tableAllocationBody);
-                    Object.keys(json).forEach(function (key, index) {
-                        var tableRow = document.createElement('tr');
-                        tableRow.innerHTML = '<td>' + tableAllocationRowTitles[index] + '</td>';
-                        tableRow.innerHTML += '<td>' + ((parseFloat(json[key]["target"]) || 0) * 100).toFixed(1) + '%' + '</td>';
 
+
+                    var exposure_color_mapping = {
+                        'Equity': '#23a899', 'Fixed Income': '#243a73', 'Commodities & Extractors': '#3e3e3e',
+                        'Precious Metals': '#d76143', 'Cash Equivalents': '#e6e7e9', 'Long Volatility': '#e01b84',
+                        'Short Volatility': '#e01b84'
+                    };
+
+                    var alloc = Object.keys(json).map(function(key) {
+                        return {
+                            "name": key, "y": parseFloat(json[key]),
+                            "color": exposure_color_mapping[key]
+                        };
+                    }).filter(function(item) {
+                        return item['y'] > 0.
+                    });
+
+                    console.log(json);
+
+                    alloc.forEach(function (item) {
+                        var tableRow = document.createElement('tr');
+                        tableRow.innerHTML = '<td>' + item['name'] + '</td>';
+                        tableRow.innerHTML += '<td>' + (item['y'] * 100).toFixed(1) + '%' + '</td>';
                         tableAllocationBody.appendChild(tableRow);
                     });
 
-                    new Allocation('allocation-chart', [
-                        { name: tableAllocationRowTitles[0], y: parseFloat(json['Equities']["target"]), color: '#23a899' },
-                        { name: tableAllocationRowTitles[1], y: parseFloat(json['Government Bonds']["target"]), color: '#243a73' },
-                        { name: tableAllocationRowTitles[2], y: parseFloat(json['Commodities & Extractors']["target"]), color: '#3e3e3e' },
-                        { name: tableAllocationRowTitles[3], y: parseFloat(json['Gold']["target"]), color: '#d76143' },
-                        { name: tableAllocationRowTitles[4], y: parseFloat(json['Cash Equivalents']["target"]), color: '#e6e7e9' },
-                    ].sort(function (a, b) {
+                    new Allocation('allocation-chart', alloc.sort(function (a, b) {
                         return a.y < b.y;
                     }).map(function (item, index) {
                         if (index === 0) {
