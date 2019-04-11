@@ -391,20 +391,15 @@ var CRCDataFn = (function (_w) {
                     var crcIndexLabelElement = document.getElementById('crc-index-label');
 
                     var date = new Date(crcIndexDate);
-                    crcIndexDateElement && (crcIndexDateElement.innerText = 'As of ' + date.toLocaleDateString('en-US', {
-                        month: 'short',
-                        year: 'numeric',
-                        day: 'numeric'
-                    }));
+                    var date_str = date.toLocaleDateString('en-US', {
+                        month: 'short', year: 'numeric', day: 'numeric', timeZone: 'UTC'
+                    });
+                    crcIndexDateElement && (crcIndexDateElement.innerText = date_str);
 
                     crcIndexValueElement && (crcIndexValueElement.innerText = parseFloat(crcIndexValue).toFixed(2));
                     crcIndexLabelElement && (crcIndexLabelElement.innerText = "NAV (" + dataOption["currency"].toUpperCase() + ") ");
                     document.querySelectorAll('.crc-date').forEach(function (item) {
-                        item.innerHTML = new Date(crcIndexDate).toLocaleDateString('en-US', {
-                            month: 'short',
-                            year: 'numeric',
-                            day: 'numeric'
-                        })  + " | " + dataOption["currency"].toUpperCase();
+                        item.innerHTML = date_str  + " | " + dataOption["currency"].toUpperCase();
                     });
 
                     new CRCPerformance('performance-chart', {
